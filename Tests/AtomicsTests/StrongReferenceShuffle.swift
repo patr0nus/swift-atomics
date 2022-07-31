@@ -15,6 +15,7 @@
 // each thread unlinks its corresponding value then reinserts it at
 // the end of the list.
 
+#if canImport(Dispatch)
 import XCTest
 import Atomics
 import Dispatch
@@ -291,3 +292,5 @@ class StrongReferenceShuffleTests: XCTestCase {
 #endif
 }
 #endif
+
+#endif // canImport(Dispatch)
