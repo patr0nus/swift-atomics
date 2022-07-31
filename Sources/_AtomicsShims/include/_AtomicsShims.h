@@ -72,6 +72,8 @@
 #  define ENABLE_DOUBLEWIDE_ATOMICS 1
 #elif defined(_WIN32)
 #  define ENABLE_DOUBLEWIDE_ATOMICS 1
+#elif defined(__wasi__)
+#  define ENABLE_DOUBLEWIDE_ATOMICS 1
 #elif defined(__linux__)
 #  if !defined(__x86_64__) || defined(__GCC_HAVE_SYNC_COMPARE_AND_SWAP_16)
 #    define ENABLE_DOUBLEWIDE_ATOMICS 1
