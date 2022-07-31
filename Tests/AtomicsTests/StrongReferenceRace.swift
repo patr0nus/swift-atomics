@@ -10,6 +10,7 @@
 //
 //===----------------------------------------------------------------------===//
 
+#if canImport(Dispatch)
 import XCTest
 import Atomics
 import Dispatch
@@ -289,3 +290,5 @@ class StrongReferenceRace: XCTestCase {
 #endif
 }
 #endif
+
+#endif // canImport(Dispatch)

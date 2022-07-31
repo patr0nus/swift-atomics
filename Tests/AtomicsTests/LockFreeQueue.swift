@@ -24,6 +24,7 @@
 // to implement a free list to resolve the original algorithm's use-after-free
 // problem.
 
+#if canImport(Dispatch)
 import XCTest
 import Dispatch
 import Atomics
@@ -196,3 +197,5 @@ class QueueTests: XCTestCase {
 }
 
 #endif
+
+#endif // canImport(Dispatch)

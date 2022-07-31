@@ -10,6 +10,7 @@
 //
 //===----------------------------------------------------------------------===//
 
+#if canImport(Dispatch)
 import XCTest
 import Atomics
 import Dispatch
@@ -151,3 +152,5 @@ class LockFreeSingleConsumerStackTests: XCTestCase {
   ]
 #endif
 }
+
+#endif // canImport(Dispatch)
